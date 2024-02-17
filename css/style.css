@@ -1390,10 +1390,10 @@
 }
  .Perfect {
      font-weight: normal;
-     background: #f7a306ab;
+     background: rgba(0, 0, 0, .5);
      padding: 0px 20px;
      font-size: 51px;
-     color: black
+     color: #f7a306ab;
 }
  .banner-main {
      position: relative;
@@ -1413,20 +1413,18 @@
      color: #fff;
 }
  .banner-main .text-bg a {
-     border: #fff solid 1px;
-     background: #f7a306ab;
+     background: rgba(0, 0, 0, .5);;
      width: 209px;
      padding: 12px 0;
      display: inline-block;
      font-weight: 500;
      font-size: 17px;
      line-height: 30px;
-     color: black;
+     color: #f7a306ab;
 }
  .banner-main .text-bg a:hover {
-     border: black solid 1px;
-     background: white;
-     color: black;
+     background: #f7a306ab;
+     color: rgba(0, 0, 0);
 }
 /** music-box **/
  .music-box {
