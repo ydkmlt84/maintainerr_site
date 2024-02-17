@@ -27,6 +27,7 @@
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
+     background: black;
 }
  a {
      color: #1f1f1f;
@@ -1345,8 +1346,6 @@
  .header {
      background: #070100;
      padding: 23px 0px;
-     border-top: #cf2323 solid 5px;
-     border-bottom: #cf2323 solid 5px;
 }
  .logo a {
      font-size: 40px;
@@ -1391,9 +1390,10 @@
 }
  .Perfect {
      font-weight: normal;
-     background: #f70606ab;
+     background: #f7a306ab;
      padding: 0px 20px;
      font-size: 51px;
+     color: black
 }
  .banner-main {
      position: relative;
@@ -1414,19 +1414,19 @@
 }
  .banner-main .text-bg a {
      border: #fff solid 1px;
-     background: #fff;
+     background: #f7a306ab;
      width: 209px;
      padding: 12px 0;
      display: inline-block;
      font-weight: 500;
      font-size: 17px;
      line-height: 30px;
-     color: #d70a03;
+     color: black;
 }
  .banner-main .text-bg a:hover {
-     border: #d70a03 solid 1px;
-     background: #d70a03;
-     color: #fff;
+     border: black solid 1px;
+     background: white;
+     color: black;
 }
 /** music-box **/
  .music-box {
