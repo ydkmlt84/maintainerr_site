@@ -21,12 +21,18 @@
      scroll-behavior: smooth;
 }
  body {
+     color: #666666;
+     font-size: 14px;
      font-family: 'poppins', sans-serif;
      line-height: 1.80857;
+     font-weight: normal;
      overflow-x: hidden;
      background: black;
 }
  a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
      -webkit-transition: all .3s ease-in-out;
      -moz-transition: all .3s ease-in-out;
      -ms-transition: all .3s ease-in-out;
@@ -40,6 +46,7 @@
      padding: 0 0 10px 0;
      font-weight: normal;
      line-height: normal;
+     color: #111111;
      margin: 0 
 }
  h1 {
@@ -66,6 +73,8 @@
      box-sizing: border-box;
 }
  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+     color: #212121;
+     text-decoration: none!important;
      opacity: 1 
 }
  button:focus {
@@ -76,7 +85,15 @@
      padding: 0px;
      list-style: none;
 }
+ p {
+     margin: 0px;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 24px;
+}
  a {
+     color: #222222;
+     text-decoration: none;
      outline: none !important;
 }
  a, .btn {
@@ -337,10 +354,12 @@
      margin-left: 0;
 }
  .menu-area-main li:hover a, .menu-area-main li:focus a {
-     color: #f3a72d;
-}
- .menu-area-main li a {
      color: #fff;
+}
+ .menu-area-main li.active a {
+     color: #fff;
+     background: #000;
+     box-shadow: #9d9d9d66 0px 0px 56px 26px;
 }
  .right_cart_section {
      float: right;
@@ -835,6 +854,8 @@
      font-size: 16px;
      display: block;
      font-weight: 500;
+     color: #555454;
+     text-transform: uppercase;
      margin: 0px 15px;
 }
  .main-menu ul li:last-child a {
@@ -1324,7 +1345,7 @@
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
  .header {
      background: #070100;
-     padding: 10px 0px;
+     padding: 23px 0px;
 }
  .logo a {
      font-size: 40px;
@@ -1361,201 +1382,21 @@
 }
  .relative {
      position: absolute;
-     top: 35%;
+     top: 50%;
      transform: translateY(-50%);
      text-align: center;
      right: 0;
      left: 0;
 }
  .Perfect {
-    font-weight: bold;
-    border-radius: 6px;
-    padding: 0px 20px;
-    font-size: 60px;
-    line-height: 1.25;
-    color: transparent;
-    background-clip: text;
-    --tw-gradient-to: #f8ba53;
-    --tw-gradient-from: #d97706;
-    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-    --tw-gradient-stops: var(--tw-gradient-to), var(--tw-gradient-from), rgba(255, 255, 255, 0.7);
-    display: block;
+     font-weight: normal;
+     background: rgba(0, 0, 0, .5);
+     padding: 0px 20px;
+     font-size: 51px;
+     color: #f7a306ab;
 }
-.Solution {
-    font-weight: bold;
-    border-radius: 6px;
-    padding: 0px 20px;
-    font-size: 55px;
-    line-height: 1.25;
-    color: white;
-    display: block;
-    background-clip: text;
-}
-.description {
-    color: rgb(175, 174, 174);
-    text-align: center;
-    margin: auto;
-    max-width: 36rem;
-    font-size: 18px;
-    padding-top: 40px;
-    padding-bottom: 25px;
-}
-.top-content {
-    display: flex;
-    flex-direction: column;
-    margin-left:auto;
-    margin-right: auto;
-    top: 35%;
-    text-align: center;
-    max-width: 80rem;
-}
-.screenshot1 {
-    margin: auto;
-    display: block;
-    padding-bottom: 3rem;
-}
-.screenshot1 img {
-    border-radius: 6px;
-}
-.middle-content {
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-}
-.middle-row {
-    padding-left:2rem;
-    padding-right:2rem;
-    display:grid;
-    grid-gap:6rem;
-    gap:6rem;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    grid-auto-flow: column dense;
-    max-width: 86rem;
-    margin-left:auto;
-    margin-right:auto;
-}
-.middle-left {
-    display:block;
-}
-.middle-right {
-    margin-top: 0;
-}
-.screenshot2 {
-    padding-left: 0;
-    padding-right: 0;
-    height: 100%;
-    margin: 0;
-    position: relative;
-}
-.screenshot2 img {
-    max-width: none;
-    width: auto;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    border-radius: 6px;
-}
-.expanded {
-    color: rgb(175, 174, 174);
-}
-.middle-perfect {
-    font-weight: bold;
-    border-radius: 6px;
-    padding: 5px;
-    font-size: 20px;
-    line-height: 1.25;
-    color: transparent;
-    background-clip: text;
-    --tw-gradient-to: #f8ba53;
-    --tw-gradient-from: #d97706;
-    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-    --tw-gradient-stops: var(--tw-gradient-to), var(--tw-gradient-from), rgba(255, 255, 255, 0.7);
-    display: block;
-}
-.bottom-content {
-    --tw-gradient-to: #dd8f0c;
-    --tw-gradient-from: #d97706;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to), #996207;
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.bottom-box {
-    padding-top: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 80rem;
-    padding-bottom: 6rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.bottom-title {
-    --tw-text-opacity: 1;
-    color: rgba(255,255,255,var(--tw-text-opacity));
-    letter-spacing: -.025em;
-    font-weight: 800;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-    margin: 0;
-}
-.bottom-grid {
-    tab-size: 4;
-    font-family: inherit;
-    line-height: inherit;
-    box-sizing: border-box;
-    color: white;
-    border: 0 solid;
-    display: grid;
-    margin-top: 4rem;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-column-gap: 2rem;
-    column-gap: 2rem;
-    grid-row-gap: 4rem;
-    row-gap: 4rem;
-}
-.grid-icons {
-    background-color: rgb(255 187 59 / 54%);
-    border-radius: 6px;
-    padding: 6px;
-    font-size: 25px;
-}
-.grid-headings {
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-}
-.grid-info {
-    font-size: 1rem;
-    color: #dfdfdf;
-    line-height: 1.5rem;
-    margin-top: .5rem;
-}
-.banner-main img {
-    background-position: 50%;
-    background-size: cover;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    margin: auto;
-    width: 0;
-    height: 0;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.banner-gradient {
-    background-image: linear-gradient(180deg, rgba(7, 10, 15, 0.5) 0%, rgb(0, 0, 0) 100%);   
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+ .banner-main {
+     position: relative;
 }
  .banner-main .carousel-item img {
      width: 100%;
