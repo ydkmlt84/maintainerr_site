@@ -16,6 +16,46 @@
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
  * {
      box-sizing: border-box !important;
+     border: 0 solid;
+}
+ *,::after,::before {
+    /* --tw-translate-x:0; */
+    /* --tw-translate-y:0; */
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    --tw-shadow: 0 0 transparent;
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+    --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+    --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+    --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+    --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+    --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+    --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+    --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+    --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);
+    --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
 }
  html {
      scroll-behavior: smooth;
@@ -87,10 +127,6 @@
      -ms-transition: all .3s ease-in-out;
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
-}
- img {
-     max-width: 100%;
-     height: auto;
 }
  :focus {
      outline: 0;
@@ -1416,6 +1452,7 @@
 }
 .screenshot1 img {
     border-radius: 6px;
+    max-width: 100%;
 }
 .middle-content {
     display: block;
@@ -1460,7 +1497,7 @@
     border-radius: 6px;
 }
 .expanded {
-    color: rgb(175, 174, 174);
+    color: rgb(255 236 217);
     padding: 2px;
 }
 .middle-perfect {
@@ -1533,6 +1570,131 @@
     color: #dfdfdf;
     line-height: 1.5rem;
     margin-top: .5rem;
+}
+.faq-content {
+  background-color: black;
+}
+.faq-box {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+.faq-title {
+    --tw-text-opacity: 1;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    letter-spacing: -.025em;
+    font-weight: 800;
+    font-size: 1.68rem;
+    text-decoration: underline;
+    line-height: 2.25rem;
+    margin: auto;
+}
+.faq-grid {
+    tab-size: 4;
+    font-family: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    color: white;
+    border: 0 solid;
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(325px,1fr));
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+    grid-row-gap: 4rem;
+    row-gap: 4rem;
+}
+.faq-grid-headings {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.faq-grid-info {
+    font-size: 1rem;
+    color: #bebebe;
+    line-height: 1.5rem;
+    margin-top: .5rem;
+}
+  .solution-content {
+    background-color: black;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    display: block;
+  }
+  .solution-box {
+    grid-gap: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(325px,1fr));
+    display: grid;
+    --tw-gradient-to: #dd8f0c;
+    --tw-gradient-from: #d97706;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to), #996207;
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .solution-buttons {
+    color: #da7807;
+    background: white;
+    border-radius: 6px;
+    font-weight:500;
+    margin-right: .5rem;
+    display:inline-flex;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    border-color: transparent;
+    border-width: 1px;
+    align-items: center;
+  }
+  .solution-buttons:hover {
+    color: black;
+  }
+  .solution-left {
+    padding: 5rem;
+  }
+  .solution-screenshot-box {
+    --tw-aspect-h: 1;
+    --tw-aspect-w: 2;
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  }
+  .solution-screenshot-box img {
+    --tw-translate-y: 5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-position: left top;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+.very-bottom {
+    background-color: #424241;
+}
+.thanks {
+    flex-direction: column;
+    max-width: 80rem;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .banner-main img {
     background-position: 50%;
