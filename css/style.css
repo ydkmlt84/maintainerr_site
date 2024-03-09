@@ -1407,7 +1407,7 @@
     margin-right: auto;
     top: 35%;
     text-align: center;
-    max-width: 80rem;
+    max-width: 86rem;
 }
 .screenshot1 {
     margin: auto;
@@ -1424,6 +1424,7 @@
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 8rem;
+    overflow:hidden;
 }
 .middle-row {
     padding-left:2rem;
@@ -1431,8 +1432,10 @@
     display:grid;
     grid-gap:6rem;
     gap:6rem;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    grid-auto-flow: column dense;
+    grid-template-columns:repeat(auto-fit,minmax(325px,1fr));
+    align-items: flex-start;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(260px, 1fr);
     max-width: 86rem;
     margin-left:auto;
     margin-right:auto;
@@ -1441,7 +1444,7 @@
     display:block;
 }
 .middle-right {
-    margin-top: 0;
+    display: block;
 }
 .screenshot2 {
     padding-left: 0;
@@ -1451,22 +1454,22 @@
     position: relative;
 }
 .screenshot2 img {
-    max-width: none;
-    width: auto;
+    width: 125%;
     height: 100%;
     left: 0;
-    position: absolute;
     border-radius: 6px;
 }
 .expanded {
     color: rgb(175, 174, 174);
+    padding: 2px;
 }
 .middle-perfect {
-    font-weight: bold;
+    font-weight: 800;
     border-radius: 6px;
-    padding: 5px;
-    font-size: 20px;
+    padding-bottom: 8px;
+    font-size: 26px;
     line-height: 1.25;
+    letter-spacing: -.025em;
     color: transparent;
     background-clip: text;
     --tw-gradient-to: #f8ba53;
@@ -1482,11 +1485,11 @@
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 .bottom-box {
-    padding-top: 6rem;
+    padding-top: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 80rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1508,7 +1511,7 @@
     border: 0 solid;
     display: grid;
     margin-top: 4rem;
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px,1fr));
     grid-column-gap: 2rem;
     column-gap: 2rem;
     grid-row-gap: 4rem;

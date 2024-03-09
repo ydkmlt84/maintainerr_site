@@ -333,6 +333,9 @@
      .Perfect {
         font-size: 23px;
     }
+    .screenshot2 img {
+        max-width: 100%;
+    }
      .banner-main .text-bg p {
         display: none;
     }
