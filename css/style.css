@@ -18,7 +18,7 @@
      box-sizing: border-box !important;
      border: 0 solid;
 }
- *,::after,::before {
+*,*::after,*::before {
     /* --tw-translate-x:0; */
     /* --tw-translate-y:0; */
     --tw-rotate: 0;
@@ -99,11 +99,6 @@
 }
  h6 {
      font-size: 13px 
-}
- *, *::after, *::before {
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
 }
  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
      opacity: 1 
