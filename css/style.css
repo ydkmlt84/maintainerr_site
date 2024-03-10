@@ -938,6 +938,7 @@
   }
 .very-bottom {
     background-color: #424241;
+    width: -webkit-fill-available;
 }
 .thanks {
     flex-direction: column;
@@ -946,6 +947,55 @@
     margin-left: auto;
     margin-right: auto;
 
+}
+.footer-box {
+    width: 100%;
+    color: white;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+
+}
+.space-x-2>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+.space-x-6>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+.footer-left {
+    align-items: center;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    list-style: none;
+}
+.footer-right {
+    align-items: center;
+    display: flex;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: inherit;
+}
+.footer-right a {
+    color: white;
+}
+.footer-right a:hover {
+    color: #da7807;
 }
 .banner-main img {
     background-position: 50%;
