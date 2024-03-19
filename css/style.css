@@ -61,7 +61,7 @@
      scroll-behavior: smooth;
 }
  body {
-     font-family: 'poppins', sans-serif;
+     font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI emoji;
      line-height: 1.80857;
      overflow-x: hidden;
      background: black;
@@ -655,10 +655,11 @@
      left: 0;
 }
  .Perfect {
-    font-weight: bold;
+    font-weight: 800;
     border-radius: 6px;
     padding: 0px 20px;
-    font-size: 60px;
+    letter-spacing: -.025em;
+    font-size: 3.75rem;
     line-height: 1.25;
     color: transparent;
     background-clip: text;
@@ -667,6 +668,7 @@
     background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
     --tw-gradient-stops: var(--tw-gradient-to), var(--tw-gradient-from), rgba(255, 255, 255, 0.7);
     display: block;
+    font-family: font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 .Solution {
     font-weight: bold;
@@ -703,7 +705,7 @@
 }
 .screenshot1 img {
     border-radius: 6px;
-    max-width: 100%;
+    max-width: 85%;
 }
 .middle-content {
     display: block;
@@ -918,16 +920,19 @@
     padding: 5rem;
   }
   .solution-screenshot-box {
-    --tw-aspect-h: 1;
-    --tw-aspect-w: 2;
+    box-sizing: border-box;
+    border: 0 solid;
+    margin-top: -1.5rem;
     position: relative;
     padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+    align-self: flex-end;
+    --tw-aspect-w: 2;
+    --tw-aspect-h: 1;
   }
   .solution-screenshot-box img {
-    --tw-translate-y: 5rem;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     top: 0;
     left: 0;
     right: 0;
@@ -935,6 +940,11 @@
     object-position: left top;
     object-fit: cover;
     border-radius: 6px;
+    --tw-aspect-h: 1;
+    --tw-aspect-w: 2;
+    box-sizing: border-box;
+    border: 0 solid;
+    
   }
 .very-bottom {
     background-color: #424241;
