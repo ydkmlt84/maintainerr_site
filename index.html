@@ -45,6 +45,23 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.maintainerr.info"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.maintainerr.info/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 </head>
 <body>
     <div id="total">
@@ -292,7 +309,7 @@
                                 <p class="expanded">Maintainerr is easy to get up and running with Docker. You can find instructions and tutorials in our documentation.
                                      If you need help, feel free to reach out.</p>
                                      <div style="padding-bottom: 0.35rem;">
-                                     <a href="https://docs.maintainerr.info/en/Installation" target="_blank" class="solution-buttons">Installation</a></div>
+                                     <a href="https://docs.maintainerr.info/Installation" target="_blank" class="solution-buttons">Installation</a></div>
                                      <a href="https://docs.maintainerr.info/" target="_blank" class="solution-buttons">Documentation</a>
                             </div>
                         </div>
