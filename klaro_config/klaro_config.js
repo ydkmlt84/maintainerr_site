@@ -10,7 +10,7 @@ var klaroConfig = {
     testing). This makes it possible to test Klaro on your live website without
     affecting normal visitors.
     */
-    testing: true,
+    testing: false,
 
     /*
     You can customize the ID of the DIV element that Klaro will create when starting
