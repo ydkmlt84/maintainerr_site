@@ -141,43 +141,18 @@ var klaroConfig = {
             */
             default: true,
 
+            title: Matomo,
+
             /*
-            Translations belonging to this service go here. The key `zz` contains default
-            translations that will be used as a fallback if there are no translations
-            defined for a given language.
-            */
-            translations: {
-                zz: {
-                    title: 'Matomo/Piwik'
-                },
-                en: {
-                    description: 'Matomo is a simple, self-hosted analytics service.'
-                },
-            },
-            /*
-            The purpose(s) of this service that will be listed on the consent notice. Do not
-            forget to add translations for all purposes you list here.
+            The purpose(s) of this service that will be listed on the consent notice.
             */
             purposes: ['analytics'],
 
             cookies: [
 
-                /*
-                This rule will match cookies that contain the string '_pk_' and that are set on
-                the path '/' and the domain 'docs.maintainerr.info'
-                */
-                [/^_pk_.*$/, '/', 'docs.maintainerr.info'],
-
-                /*
-                Same as above, only for the 'localhost' domain
-                */
                 [/^_pk_.*$/, '/', 'localhost'],
-
-                /*
-                This rule will match all cookies named 'piwik_ignore' that are set on the path
-                '/' on the current domain
-                */
-                'matomo_ignore',
+                [/^_mtm_.*$/, '/', 'localhost'],
+                [/^MATOMO.*$/, '/', 'localhost'],
             ],
 
             /*
@@ -187,10 +162,16 @@ var klaroConfig = {
             be passed as the second parameter.
             */
             callback: function(consent, service) {
-                console.log(
-                    'User consent for service ' + service.name + ': consent=' + consent
-                );
-            },
+                if (_paq !== 'undefined') {
+                    if (consent == true){
+                         _paq.push(['rememberCookieConsentGiven']);
+                         _paq.push(['setConsentGiven']);
+                    } else {
+                         _paq.push(['forgetCookieConsentGiven'])
+                         _paq.push(['deleteCookies']);
+                    }
+                 }
+             },
 
             /*
             If 'required' is set to 'true', Klaro will not allow this service to be disabled
