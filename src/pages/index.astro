@@ -1,0 +1,29 @@
+---
+import '../styles/global.css'
+import Menu from '../components/Menu.astro'
+import Layout from '../layouts/Layout.astro'
+import Title from '../components/Title.astro'
+import Top from '../components/Top.astro'
+import Middle from '../components/Middle.astro'
+import background from '../assets/background.png'
+import Image from 'astro/components/Image.astro'
+---
+
+<Layout>
+  <!-- Background Image -->
+  <Image
+    class="absolute inset-0 w-full h-full object-cover z-[-10]"
+    src={background}
+    alt="Background"
+    loading="eager"
+  />
+  <!-- Gradient Overlay -->
+  <div
+    class="absolute inset-0 z-[-4] bg-gradient-to-b from-[#070a0f80]/50 to-black"
+  >
+  </div>
+  <Menu />
+  <Title />
+  <Top />
+  <Middle />
+</Layout>

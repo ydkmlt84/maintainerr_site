@@ -1,0 +1,22 @@
+---
+import Image from 'astro/components/Image.astro'
+import mainSs from '../assets/main-screenshot.png'
+---
+
+<p
+  class="font-semibold text-base md:text-xl px-6 text-zinc-300 text-center max-w-4xl m-auto mt-10 mb-4"
+>
+  Maintainerr makes managing your media easy. No longer will you have to worry
+  about your precious hard drive space being taken up by media, that isn't even
+  being watched.
+</p>
+<div class="max-w-7xl md:px-0 px-2 flex items-center m-auto">
+  <Image
+    class="rounded-lg shadow-lg"
+    src={mainSs}
+    alt="Main Screenshot of Maintainerr"
+    width={1280}
+    height={720}
+    loading="eager"
+  />
+</div>

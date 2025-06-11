@@ -1,0 +1,95 @@
+---
+import Image from 'astro/components/Image.astro'
+import maintainerrLogo from '../assets/logo.svg'
+import '../styles/global.css'
+---
+
+<nav class="relative max-w-6xl mx-auto flex items-center justify-between p-4">
+  <Image
+    src={maintainerrLogo}
+    alt="Maintainerr Logo"
+    width={200}
+    height={50}
+    class=""
+    loading="eager"
+  />
+
+  <button
+    data-dropdown-toggle="mobile-menu"
+    class="text-white md:hidden"
+    aria-controls="mobile-menu"
+    aria-expanded="false"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </button>
+
+  <div class="hidden md:flex">
+    <a
+      href="https://docs.maintainerr.info"
+      class="text-white hover:text-amber-500 px-4 font-semibold"
+      >Documentation</a
+    >
+    <a
+      class="text-white hover:text-amber-500 px-4 font-semibold"
+      href="https://features.maintainerr.info/?view=most-wanted"
+      target="_blank">Feature Requests</a
+    >
+    <a
+      class="text-white hover:text-amber-500 px-4 font-semibold"
+      href="https://discord.maintainerr.info"
+      target="_blank"
+      >Discord
+    </a>
+    <a
+      class="text-white hover:text-amber-500 px-4 font-semibold"
+      href="https://github.com/jorenn92/maintainerr"
+      target="_blank">Github</a
+    >
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div id="mobile-menu" class="hidden z-50 w-64 mt-4">
+  <ul
+    class="flex flex-col divide-y divide-zinc-600 bg-gradient-to-br from-zinc-800 to-zinc-700 rounded-xl shadow-2xl backdrop-blur-md"
+  >
+    <li>
+      <a
+        class="block px-6 py-4 text-white text-lg font-semibold hover:text-amber-400 hover:bg-zinc-700 transition-colors"
+        href="https://docs.maintainerr.info"
+        target="_blank">📖 Documentation</a
+      >
+    </li>
+    <li>
+      <a
+        class="block px-6 py-4 text-white text-lg font-semibold hover:text-amber-400 hover:bg-zinc-700 transition-colors"
+        href="https://features.maintainerr.info/?view=most-wanted"
+        target="_blank">✨ Feature Requests</a
+      >
+    </li>
+    <li>
+      <a
+        class="block px-6 py-4 text-white text-lg font-semibold hover:text-amber-400 hover:bg-zinc-700 transition-colors"
+        href="https://discord.maintainerr.info"
+        target="_blank">💬 Discord</a
+      >
+    </li>
+    <li>
+      <a
+        class="block px-6 py-4 text-white text-lg font-semibold hover:text-amber-400 hover:bg-zinc-700 transition-colors"
+        href="https://github.com/jorenn92/maintainerr"
+        target="_blank">💻 Github</a
+      >
+    </li>
+  </ul>
+</div>
