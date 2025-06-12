@@ -2,10 +2,13 @@
 import { Image } from 'astro:assets'
 import '../styles/global.css'
 import rules from '../assets/rules-screenshot.png'
+// Add your other screenshot imports here
+import collections from '../assets/collections-screenshot.png'
+import settings from '../assets/final-screenshot.png'
 ---
 
 <div class="px-[2rem] py-[4rem]">
-  <div class="gap-[6rem] max-w-7xl grid grid-cols-1 md:grid-cols-2 m-auto">
+  <div class="gap-14 max-w-7xl grid grid-cols-1 md:grid-cols-2 m-auto">
     <div class="text-stone-400 font-semibold">
       <div
         class="text-transparent font-extrabold text-2xl mb-4 bg-clip-text bg-gradient-to-br from-amber-600 to-amber-400 tracking-tight"
@@ -24,19 +27,42 @@ import rules from '../assets/rules-screenshot.png'
       <hr class="w-full h-2 my-4" />
 
       <p>
-        Utilize multiple parameters across Plex, Sonarr, Radarr, Tautulli, and
-        Overseerr to find unwatched/unwanted media, and get rid of it.
+        Utilize multiple parameters across Plex, Sonarr, Radarr, Tautulli,
+        Jellyseerr, and Overseerr to find unwatched/unwanted media, and get rid
+        of it.
       </p>
     </div>
-    <div>
-      <div>
-        <Image
-          src={rules}
-          alt="Rules Screenshot"
-          class="rounded-lg shadow-lg"
-          width={1280}
-          height={720}
-        />
+    <div class="md:-mr-[4rem]">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={rules}
+              alt="Rules Screenshot"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={collections}
+              alt="Collections Screenshot"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <!-- <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={settings}
+              alt="Settings Screenshot"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div> -->
+        </div>
       </div>
     </div>
   </div>
