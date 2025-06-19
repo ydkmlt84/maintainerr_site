@@ -1,0 +1,30 @@
+---
+import Image from 'astro/components/Image.astro';
+import final from '../assets/final-screenshot.png';
+---
+    <!-- The box at the bottom for Installation Link and Docs-->
+    <div class="bg-zinc-600 px-4 max-w-7xl mb-8 m-auto rounded-lg">
+        <div class="grid md:grid-cols-2 grid-cols-1">
+            <div class="justify-center items-center p-8">
+                    <h2 class="font-bold text-3xl mb-4 text-white">
+                    <span>Sound like the solution?</span>
+                    </h2>
+                    <p class="text-zinc-300 font-semibold py-6">Maintainerr is easy to get up and running with Docker. You can find instructions and tutorials in our documentation.
+                     If you need help, feel free to reach out.</p>
+                     <div class="">
+                     <a href="https://docs.maintainerr.info/latest/Installation" target="_blank" class="text-amber-600 font-semibold bg-white rounded-lg p-4">Installation</a>
+                     <a href="https://docs.maintainerr.info/" target="_blank" class="text-amber-600 font-semibold bg-white rounded-lg p-4">Documentation</a>
+                        </div>
+            </div>         
+            <div class="py-4 rounded-lg">
+                <Image
+                src={final}
+                alt="Screenshot"
+                width=0.5
+                height=0.5
+                class=""
+                loading="eager"
+                />
+            </div>
+        </div>
+    </div>         

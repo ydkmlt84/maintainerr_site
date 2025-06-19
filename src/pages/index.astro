@@ -6,7 +6,7 @@ import Title from '../components/Title.astro'
 import Top from '../components/Top.astro'
 import Middle from '../components/Middle.astro'
 import Bottom from '../components/Bottom.astro'
-import Stats from '../components/Stats.astro'
+import Solution from '../components/Solution.astro'
 import background from '../assets/background.png'
 ---
 
@@ -21,7 +21,7 @@ import background from '../assets/background.png'
 
     <!-- Gradient Overlay -->
     <div
-      class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-[#070a0f]/50 to-black z-[-4]"
+      class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-[#070a0f]/50 to-black z-[-4] h-[4000px] pointer-events-none"
     >
     </div>
     <Menu />
@@ -29,6 +29,6 @@ import background from '../assets/background.png'
     <Top />
     <Middle />
     <Bottom />
-    <Stats />
+    <Solution />
   </div>
 </Layout>
