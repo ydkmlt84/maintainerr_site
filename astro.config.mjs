@@ -6,5 +6,5 @@ import icon from 'astro-icon'
 export default defineConfig({
   integrations: [tailwind(), icon()],
   site: 'https://ydkmlt84.github.io',
-  base: '/new_site/',
+  base: '/maintainerr_site/',
 })
