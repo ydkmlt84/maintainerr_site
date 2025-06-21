@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets'
 import '../styles/global.css'
-import collectionInfo from '../assets/screenshots/CollectionInfo.png'
-import rules from '../assets/screenshots/Rules.png'
+import CollectionInfo from '../assets/screenshots/CollectionInfo.png'
+import Rules from '../assets/screenshots/Rules.png'
 import Collections from '../assets/screenshots/Collections.png'
-import Ruleconfig from '../assets/screenshots/RuleConfig.png'
-import Rulesetup from '../assets/screenshots/RuleSetup.png'
-import settings from '../assets/screenshots/Settings.png'
+import Ruleconfig from '../assets/screenshots/Ruleconfig.png'
+import Rulesetup from '../assets/screenshots/Rulesetup.png'
+import Settings from '../assets/screenshots/Settings.png'
 ---
 
 <div class="px-[2rem] py-[4rem]">
@@ -39,7 +39,7 @@ import settings from '../assets/screenshots/Settings.png'
         <div class="relative h-40 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-500 ease-linear" data-carousel-item>
             <Image
-              src={rules}
+              src={Rules}
               alt="Rules Screenshot"
               class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={1280}
@@ -75,7 +75,7 @@ import settings from '../assets/screenshots/Settings.png'
           </div>
           <div class="hidden duration-500 ease-linear" data-carousel-item>
             <Image
-              src={settings}
+              src={Settings}
               alt="Collections Screenshot"
               class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={1280}
@@ -84,7 +84,7 @@ import settings from '../assets/screenshots/Settings.png'
           </div>
           <div class="hidden duration-500 ease-linear" data-carousel-item>
             <Image
-              src={collectionInfo}
+              src={CollectionInfo}
               alt="Collections Screenshot"
               class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={1280}
