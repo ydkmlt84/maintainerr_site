@@ -1,0 +1,98 @@
+---
+import { Image } from 'astro:assets'
+import '../styles/global.css'
+import CollectionInfo from '../assets/screenshots/CollectionInfo.png'
+import Rules from '../assets/screenshots/Rules.png'
+import Collections from '../assets/screenshots/Collections.png'
+import Ruleconfig from '../assets/screenshots/Ruleconfig.png'
+import Rulesetup from '../assets/screenshots/Rulesetup.png'
+import Settings from '../assets/screenshots/Settings.png'
+---
+
+<div class="px-[2rem] py-[4rem]">
+  <div class="gap-14 max-w-7xl grid grid-cols-1 md:grid-cols-2 m-auto">
+    <div class="text-stone-400 font-semibold">
+      <div
+        class="text-transparent font-extrabold text-2xl mb-4 bg-clip-text bg-gradient-to-br from-amber-600 to-amber-400 tracking-tight"
+      >
+        The Best Way to Manage Your Library
+      </div>
+      <p>
+        Maintainerr helps you find those outlying media items that have just
+        been sitting there in your library. If you use <a
+          href="https://overseerr.dev"
+          style="color:#6366f1"
+          target="_blank">Overseerr</a
+        >, it is easy for your users to start downloading everything they can
+        think of. Sometimes, they don't even watch it.
+      </p>
+      <hr class="w-full h-2 my-4" />
+
+      <p>
+        Utilize multiple parameters across Plex, Sonarr, Radarr, Tautulli,
+        Jellyseerr, and Overseerr to find unwatched/unwanted media, and get rid
+        of it.
+      </p>
+    </div>
+    <div class="md:-mr-[6rem]">
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-40 overflow-hidden rounded-lg md:h-96">
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={Rules}
+              alt="Rules Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={1280}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={Collections}
+              alt="Collections Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={Ruleconfig}
+              alt="Collections Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={Rulesetup}
+              alt="Collections Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={Settings}
+              alt="Collections Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+          <div class="hidden duration-500 ease-linear" data-carousel-item>
+            <Image
+              src={CollectionInfo}
+              alt="Collections Screenshot"
+              class="absolute block w-full md:h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={1280}
+              height={720}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

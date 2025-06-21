@@ -1,0 +1,204 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<div class="px-4 max-w-7xl mb-8 m-auto">
+  <div
+    class="bg-gradient-to-r from-[#d97706] to-[#996207] via-[#dd8f0c] rounded-lg"
+  >
+    <div class="py-16 px-8 max-w-7xl mx-auto">
+      <div
+        class="text-white tracking-tight font-extrabold text-3xl leading-9 m-0"
+      >
+        A library management system built to help you save space.
+      </div>
+      <p class="text-white text-lg mt-1">
+        Maintainerr was created to assist you in freeing up storage space. Here
+        are some of its useful features :
+      </p>
+      <div
+        class="grid mt-16 text-white gap-x-6 gap-y-6"
+        style="grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));"
+      >
+        <div>
+          <div>
+            <Icon name="solid/object-group" />
+            <style>
+              [data-icon='solid/object-group'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Collection Management</div>
+            <p class="text-zinc-200 pr-4">
+              Make Collections from a specific set of rules, defined by you.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/film" />
+            <style>
+              [data-icon='solid/film'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Plex Overview</div>
+            <p class="text-zinc-200 pr-4">
+              See an overview of your Plex library contents
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/plus" />
+            <style>
+              [data-icon='solid/plus'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Manual Control</div>
+            <p class="text-zinc-200 pr-4">
+              Manually add media items into or remove media from a collection
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/house-chimney-user" />
+            <style>
+              [data-icon='solid/house-chimney-user'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Plex Collections</div>
+            <p class="text-zinc-200 pr-4">
+              Show your new collection on the Plex Home screen
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/clock-rotate-left" />
+            <style>
+              [data-icon='solid/clock-rotate-left'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Countdown Timer</div>
+            <p class="text-zinc-200 pr-4">
+              Set a number of days the collection will exist before its contents
+              are deleted
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="regular/handshake" />
+            <style>
+              [data-icon='regular/handshake'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">*arr Integration</div>
+            <p class="text-zinc-200 pr-4">
+              Set Radarr and Sonarr to either remove or unmonitor media in the
+              collection
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="regular/eye" />
+            <style>
+              [data-icon='regular/eye'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Overseerr Integration</div>
+            <p class="text-zinc-200 pr-4">Auto clear requests from Overseerr</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/warehouse" />
+            <style>
+              [data-icon='solid/warehouse'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Storage Management</div>
+            <p class="text-zinc-200 pr-4">Remove media from disk</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <Icon name="solid/list-check" />
+            <style>
+              [data-icon='solid/list-check'] {
+                font-size: 2.5rem;
+                background-color: orange;
+                padding: 0.5rem;
+                border-radius: 8px;
+                margin-bottom: 2px;
+              }
+            </style>
+          </div>
+          <div>
+            <div class="font-bold text-lg mb-2">Tautulli Integration</div>
+            <p class="text-zinc-200 pr-4">
+              Use information and statistics from your Tautulli installation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
